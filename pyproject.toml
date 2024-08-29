@@ -1,0 +1,13 @@
+[project]
+name = "uv-opt-dep"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["a-lib"]
+
+[tool.uv.sources]
+a-lib = { workspace = true }
+
+[tool.uv.workspace]
+members = ["a-lib", "an-app"]
